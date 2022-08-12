@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "CBE Bank",
+    "onSale": false,
+    "tags": ["Axion", "People"],
+    "image": "https://images.skyscrapercenter.com/building/commercialbankethopia_rendering_(c)henn.jpg",
+    "description": "Amhara bank axions ",
+    "amount": 300000,
+    "salePrice": 390000,
+    "ratings": 4.0
+  },
+  {
+    "id": 2,
+    "name": "Abay Bank",
+    "onSale": true,
+    "tags": ["Axion", "People"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF4ZwBDJHvSE2O08kM_zzN5ZvC7xnyepn8Ig&usqp=CAU",
+    "description": "Abay Bank",
+    "amount": 500000,
+    "salePrice": 650000,
+    "ratings": 4.5
+  },
+  {
+    "id": 3,
+    "name": "Awash Bank",
+    "onSale": true,
+    "tags": ["Axion", "People"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDjjJTLLbxLMyPvOwBg1wvc8_Iu1NupgZwOA&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDjjJTLLbxLMyPvOwBg1wvc8_Iu1NupgZwOA&usqp=CAU",
+    "description": "Awash Bank",
+    "amount": 10500,
+    "salePrice": 19000,
+    "ratings": 4.5
+  },
+  {
+    "id": 4,
+    "name": "Tsehay Insurance",
+    "onSale": false,
+    "tags": ["Home", "Pretty"],
+    "image": "https://addisbiz.com/wp-content/uploads/tsehay-insurance-logo-profit-finacial-information-annual-report-profit-eps-assets-capital.jpg",
+    "description": "Tsehay Insurance",
+    "amount": 100500,
+    "salePrice": 200000,
+    "ratings": 4
+  },
+  {
+    "id": 5,
+    "name": "Abay Insurance",
+    "onSale": true,
+    "tags": ["Axion", "People"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnYTIT5voyF3S3VGIENEIvcw8sl25XDTRD0Q&usqp=CAU",
+    "description": "Anbesa Insurance",
+    "price": 50500,
+    "salePrice": 650000,
+    "ratings": 3.5
+  },
+  {
+    "id": 6,
+    "name": "Bank Of Abisiniya",
+    "onSale": true,
+    "tags": ["Axion", "People"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Ub5-qBXKcYxooU0kBybJyz2b9Ab5V247Sw&usqp=CAU",
+    "description": "Bank of Abisinia axion",
+    "amount": 500000,
+    "salePrice": 40000,
+    "ratings": 3.5
+  }
+]

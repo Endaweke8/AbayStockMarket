@@ -1,0 +1,27 @@
+.el {
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.08) !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.swal2-popup.swal2-toast .swal2-html-container,
+.swal2-container.swal2-center > .swal2-popup {
+  font-family: "DM Sans" !important;
+}
+.linkk{
+  text-decoration: none;
+  font-size: 25px;
+  font-style: italic;
+  color: black;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: white;
+}
+.linkk:hover{
+  
+  font-size: 29px;
+
+  background-color: rgb(241, 236, 236);
+}

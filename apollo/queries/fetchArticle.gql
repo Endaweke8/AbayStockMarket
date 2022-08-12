@@ -1,0 +1,9 @@
+﻿query cars($id: Int) {
+  cars(where: {ID: {_eq: $id}}) {
+    ID
+    car_brand
+    car_model
+    car_name
+    car_type
+  }
+}

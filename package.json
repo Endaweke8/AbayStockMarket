@@ -1,0 +1,49 @@
+{
+  "name": "አባይ_ደላላ",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt generate",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "npm run lint:js && npm run lint:prettier",
+    "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.14.0",
+    "@nuxt/types": "^2.15.8",
+    "@nuxtjs/apollo": "^4.0.1-rc.5",
+    "@nuxtjs/ngrok": "^2.0.0",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@sweetalert2/theme-material-ui": "^5.0.8",
+    "apollo-cache-inmemory": "^1.6.6",
+    "core-js": "^3.15.1",
+    "cross-env": "^7.0.3",
+    "graphql-tag": "^2.12.6",
+    "nuxt": "^2.13.3",
+    "nuxt-webfontloader": "^1.1.0",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "vue-sweetalert2": "^5.0.2",
+    "vue-template-compiler": "^2.6.14",
+    "vuetify": "^2.6.1"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.16.3",
+    "@nuxtjs/eslint-config": "^8.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/vuetify": "^1.12.3",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-nuxt": "^3.1.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "webpack": "^4.0.0"
+  }
+}

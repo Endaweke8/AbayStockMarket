@@ -1,0 +1,58 @@
+
+[
+    {
+      "id": 1,
+      "name": "RealState",
+      "onSale": false,
+      "tags": ["Headphone", "People"],
+      "image": "https://www.sunrise-real-estate.com/images/image-2020-10-10-00-14-17-1080-2.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, possimus temporibus reprehenderit molestiae, doloribus eos obcaecati expedita, voluptatibus commodi  suscipit aliquid fuga modi alias fugiat nostrum. Accusantium incidunt quae modi",
+      "price": 20000,
+      "salePrice": null,
+      "ratings": 4.0
+    },
+    {
+        "id": 2,
+        "name": "condominium",
+      "onSale": true,
+      "tags": ["Perfume", "Women"],
+      "image": "https://lh3.googleusercontent.com/geougc/AF1QipNzWcwkNHp9jke_3dssBI6RB03sozwTwS5EtWi-=h305-no",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, possimus temporibus reprehenderit molestiae, doloribus eos obcaecati expedita, voluptatibus commodi  suscipit aliquid fuga modi alias fugiat nostrum. Accusantium incidunt quae modi",
+      "price": 3500,
+      "salePrice": 3000,
+      "ratings": 4.5
+    },
+    {
+      "id": 3,
+      "name": "vila bet",
+      "onSale": true,
+      "tags": ["Nike", "Men"],
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQioDbvXTXMmvxpSxkSFJFLyelHi1dkVkktyA&usqp=CAU",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, possimus temporibus reprehenderit molestiae, doloribus eos obcaecati expedita, voluptatibus commodi  suscipit aliquid fuga modi alias fugiat nostrum. Accusantium incidunt quae modi",
+      "price": 10500,
+      "salePrice": 9000,
+      "ratings": 4.5
+    },
+    {
+      "id": 4,
+      "name": "Tiny Home",
+      "onSale": false,
+      "tags": ["Home", "Pretty"],
+       "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Ethiopian_House_%285072410638%29.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, possimus temporibus reprehenderit molestiae, doloribus eos obcaecati expedita, voluptatibus commodi  suscipit aliquid fuga modi alias fugiat nostrum. Accusantium incidunt quae modi",
+      "price": 100500,
+      "salePrice": null,
+      "ratings": 4
+    },
+    {
+      "id": 5,
+      "name": "Business Center",
+      "onSale": true,
+      "tags": ["Watch", "Men"],
+      "image": "https://www.ethyp.com/img/et/k/1636996981-89-kelifa-business-center.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, possimus temporibus reprehenderit molestiae, doloribus eos obcaecati expedita, voluptatibus commodi  suscipit aliquid fuga modi alias fugiat nostrum. Accusantium incidunt quae modi",
+      "price": 50500,
+      "salePrice": 40000,
+      "ratings": 3.5
+    }
+  ]

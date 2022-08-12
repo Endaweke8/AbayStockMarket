@@ -1,0 +1,27 @@
+﻿mutation insert_cars(
+  $car_brand:String!,
+  $car_type:String,
+  $car_model:String,
+  $car_name:String,
+  ) 
+{
+  insert_cars(objects: {
+    car_brand:$car_brand, 
+    car_model:$car_model ,
+     car_name: $car_name, 
+     car_type:$car_type 
+     }) 
+     {
+    affected_rows
+    returning {
+      ID
+      car_brand
+      car_model
+      car_name
+      car_type
+      created_at
+      updated_at
+    }
+  }
+}
+

@@ -1,0 +1,12 @@
+﻿query{ 
+  cars {
+    ID
+    car_brand
+    car_model
+    car_name
+    car_type
+    created_at
+    updated_at
+  }
+}
+
