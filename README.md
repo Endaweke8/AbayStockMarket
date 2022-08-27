@@ -1,4 +1,4 @@
-# ecommerce_in_nuxtjs_and_veutify
+# Stock_Market_Website_in_nuxtjs_and_veutify
  ## Build Setup
 
 ```bash
