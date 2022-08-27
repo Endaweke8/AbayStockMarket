@@ -1,0 +1,1 @@
+CREATE TABLE "public"."messages" ("id" serial NOT NULL, "name" text NOT NULL, "phone_number" numeric NOT NULL, "address" text NOT NULL, "email" text NOT NULL, "message" text NOT NULL, PRIMARY KEY ("id") );COMMENT ON TABLE "public"."messages" IS E'users message table';

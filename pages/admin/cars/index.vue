@@ -17,8 +17,15 @@
     :items-per-page="5"
     class="elevation-1"
   >
-  <template v-slot:item.action>
-    <v-btn color="success" class="mr-0" >View</v-btn>
+  <template v-slot:item.edit>
+    <v-btn color="success" class="mr-0"  icon>
+      <v-icon>mdi-pencil</v-icon>
+      </v-btn>
+  </template>
+  <template v-slot:item.delete>
+    <v-btn color="success" class="mr-0"  icon>
+      <v-icon>mdi-delete</v-icon>
+      </v-btn>
   </template>
   </v-data-table>
         </v-col>
@@ -44,7 +51,8 @@ import SideBar from '~/components/SideBar.vue';
             value: 'name',
           },
           { text: 'Total Orders', value: 'total' },
-          { text: 'Action', value: 'action' },
+          { text: 'Edit', value: 'edit' },
+          { text: 'Delete', value: 'delete' },
         ],
         desserts: [
           {

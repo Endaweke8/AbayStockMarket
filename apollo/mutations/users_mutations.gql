@@ -1,0 +1,21 @@
+mutation insert_users(
+  $name:String!,
+  $email:String,
+  $password:String,
+  ) 
+{
+  insert_users(objects: {
+    name:$name, 
+    email:$email ,
+     password: $password, 
+     }) 
+     {
+    affected_rows
+  }
+}
+
+mutation delete_users($id:Int!) {
+  delete_users(where: {id: {_eq: $id}}) {
+    affected_rows
+  }
+}

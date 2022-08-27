@@ -99,13 +99,13 @@
                </v-list-item-content> 
             
         </v-list-item>
-        <v-list-item v-for="(menu,index) in menus" :key="index" link>
+        <v-list-item v-for="(menu,index) in menus" :key="index">
            <v-list-item-icon>
             <v-icon>{{menu.icon}}</v-icon>
            </v-list-item-icon>
            <v-list-item-content>
             <v-list-item-title>
-                {{menu.title}}
+                <nuxt-link :to="menu.routee">{{menu.title}}</nuxt-link>
             </v-list-item-title>
            </v-list-item-content>
         </v-list-item>
@@ -121,16 +121,16 @@
             data: () => ({
       menus:[
          {
-         title:"profile",icon:"mdi-account"
+         title:"profile",icon:"mdi-account",routee:'/about',
          },
            {
-         title:"Change-Password",icon:"mdi-key"
+         title:"Change-Password",icon:"mdi-key",routee:'/signin'
          },
            {
-         title:"Settings",icon:"mdi-cog"
+         title:"Settings",icon:"mdi-cog",routee:'/axions'
          },
            {
-         title:"Logout",icon:"mdi-logout"
+         title:"Logout",icon:"mdi-logout",routee:'/'
          },
       ],
       items: [

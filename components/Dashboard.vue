@@ -6,7 +6,14 @@
             View Orders
           </v-btn>
         </v-subheader>
-        <v-row>
+        <br>
+        <br>
+        <ViewOrders />
+        <br>
+        <br>
+        <ViewUsers />
+
+        <!-- <v-row>
             <v-col lg="7" cols="12">
                   <v-alert
                     dense
@@ -112,7 +119,7 @@
   </template>
   </v-data-table>
         </v-col>
-     </v-row>
+     </v-row> -->
     </div>
 </template>
 

@@ -13,16 +13,16 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "አባይ ጠቅላላ የድለላ ስር",
+    title: "Ethiopian Stock Market",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "Free eCommerce Site Built With NuxtJS ❤",
+        content: "Ethiopian Security Exchange",
       },
-      { name: "format-detection", content: "telephone=no" },
+      { name: "description", content: "Ethiopian Security Exchange" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
@@ -43,6 +43,7 @@ export default {
     "@nuxtjs/ngrok",
   ],
 
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
@@ -51,7 +52,8 @@ export default {
     "@nuxt/content",
     "vue-sweetalert2/nuxt/no-css",
     "nuxt-webfontloader",
-    "@nuxtjs/apollo"
+    "@nuxtjs/apollo",
+  
   ],
   apollo: {
     cookieAttributes: {

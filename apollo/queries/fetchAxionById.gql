@@ -1,0 +1,10 @@
+query axions($id: Int) {
+  axions(where: {id: {_eq: $id}}) {
+    id
+    axions_type
+    axions_amount
+    selling_price
+    image_url
+    axions_description
+  }
+}

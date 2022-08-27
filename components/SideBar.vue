@@ -23,16 +23,72 @@
 
       <v-list>
         <v-list-item
-          v-for="[icon, text] in links"
-          :key="icon"
-          link
+         
         >
           <v-list-item-icon>
-            <v-icon>{{ icon }}</v-icon>
+            <v-icon>mdi-ubuntu</v-icon>
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>{{ text }}</v-list-item-title>
+            <v-list-item-title>Dashbaord</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item
+         
+        >
+          <v-list-item-icon>
+            <v-icon>mdi-account</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Profile</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item
+         
+        >
+          <v-list-item-icon>
+            <v-icon>mdi-clipboard-list-outline</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Product</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+         <v-list-item
+         
+        >
+          <v-list-item-icon>
+            <v-icon>mdi-clipboard-list</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Order</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+         <v-list-item
+         
+        >
+          <v-list-item-icon>
+            <v-icon>mdi-cog-outline</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>System Settings</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        
+         <v-list-item
+         
+        >
+          <v-list-item-icon>
+            <v-icon>mdi-plus</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>
+              <nuxt-link to="/admin/addAxions">Add Axions</nuxt-link>
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

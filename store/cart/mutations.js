@@ -5,22 +5,10 @@ export default {
       state.cart = JSON.parse(cart);
     }
   },
-  AddToCart(state, product) {
-    //Check if item is in cart
-    let itemfound = state.cart.find((p) => p.product.id === product.id);
-    if (!itemfound) {
-      state.cart.push({ product, quantity: 1 });
-    }
-    if (itemfound) {
-      itemfound.quantity += 1;
-    }
-
-    //Update local storage
-    localStorage.setItem("myCart", JSON.stringify(state.cart));
-
+  AddToCart(state) {
     this.$swal({
       toast: true,
-      text: "Cart Updated.",
+      text: "Your request is successful",
       icon: "success",
       timer: 4000,
       timerProgressBar: true,

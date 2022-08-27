@@ -1,0 +1,19 @@
+mutation insert_messages(
+  $name:String!,
+   $phone_number:numeric!,
+  $address:String,
+  $email:String,
+  $message:String!,
+  ) 
+{
+  insert_messages(objects: {
+    name:$name,
+    phone_number:$phone_number,
+    address:$address 
+    email:$email,
+    message:$message
+     }) 
+     {
+    affected_rows
+  }
+}

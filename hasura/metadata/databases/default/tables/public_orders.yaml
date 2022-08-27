@@ -1,0 +1,3 @@
+table:
+  name: orders
+  schema: public

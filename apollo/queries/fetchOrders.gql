@@ -1,0 +1,13 @@
+query{ 
+  orders(order_by:{updated_at: desc}){
+    id
+    name
+    axion_type
+    axion_amount
+    buying_price
+    phone_number
+    address
+    email
+    updated_at
+  }
+}

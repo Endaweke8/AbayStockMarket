@@ -1,51 +1,35 @@
 <template>
   <div>
     <DesktopNav />
-    <v-container v-if="axion">
-      <v-row justify="center">
-        <v-col cols="11" md="7">
+    <v-container v-if="axions">
+      <v-row justify="center" v-for="item in axions" :key="item.id">
+        <v-col cols="11" md="7" >
           <h2 class="text-center text-md-h4 font-weight-bold">
-            {{ axion.name }}
+            {{ item.axions_type }}
           </h2>
-          <div class="mt-2 text-center">
-            <v-rating
-              readonly
-              half-increments
-              class="mb-2"
-              color="yellow darken-2"
-              background-color="grey lighten-1"
-              :value="axion.ratings"
-              dense
-              size="20"
-            ></v-rating>
-            <v-chip
-              small
-              label
-              outlined
-              class="mr-1"
-              v-for="(t, i) in axion.tags"
-              :key="`prod${axion.id}-${i}`"
-            >
-              {{ t }}
-            </v-chip>
-          </div>
           <br />
           <v-img
             width="100%"
             class="el rounded-lg"
             height="50vh"
-            :src="axion.image"
+            :src="item.image_url"
           ></v-img>
-          <p class="mt-5 mb-7">
-            {{ axion.description }}
-          </p>
+          <h2 class="mt-5 mb-7">
+           Axion Amount : {{ item.axions_amount }}.00  Birr
+          </h2>
+          <h2 class="mt-5 mb-7">
+           Selling Price : {{ item.selling_price }}.00  Birr
+          </h2>
+          <h2 class="mt-5 mb-7">
+         {{ item.axions_description }}
+          </h2>
           <v-btn
-            @click="$store.commit('cart/AddToCart', axion)"
+            nuxt to="/orders"
             min-height="45"
             min-width="170"
             class="text-capitalize"
             color="primary"
-            >Add To Cart</v-btn
+            >Buy Axion</v-btn
           >
         </v-col>
       </v-row>
@@ -56,20 +40,24 @@
 </template>
 
 <script>
+import axions from '~/apollo/queries/fetchAxionById'
 export default {
-  async created() {
-    let d = await this.$content("axions")
-      .where({ id: parseInt(this.$route.params.id) })
-      .limit(1)
-      .fetch();
-    this.axion = d[0];
+  apollo: {
+    axions: {
+      query: axions,
+      prefetch: ({ route }) => ({ id: route.params.id }),
+      variables() {
+        return { id: this.$route.params.id }
+      },
+      
+    }
   },
-  data() {
+  head() {
     return {
-      axion: null,
-    };
-  },
-};
+      title: 'Articles by Author'
+    }
+  }
+}
 </script>
 
 <style></style>

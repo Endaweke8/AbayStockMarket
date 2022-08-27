@@ -1,0 +1,23 @@
+mutation insert_sellaxions(
+  $name:String!,
+  $axion_type:String!,
+   $axion_amount:numeric!,
+   $selling_price:numeric!,
+   $phone_number:numeric!,
+  $address:String,
+  $email:String,
+  ) 
+{
+  insert_sellaxions(objects: {
+    name:$name,
+    axion_type:$axion_type,
+    axion_amount:$axion_amount,
+    selling_price:$selling_price,
+    phone_number:$phone_number,
+    address:$address 
+    email:$email,
+     }) 
+     {
+    affected_rows
+  }
+}

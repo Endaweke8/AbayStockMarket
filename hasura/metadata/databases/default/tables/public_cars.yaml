@@ -1,0 +1,3 @@
+table:
+  name: cars
+  schema: public
